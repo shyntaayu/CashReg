@@ -44,14 +44,13 @@
 				@yield('header')
 
 				<hr />
-
-
+				@yield('breadcrumb')
 				@yield('content')
 
 				<!-- Footer -->
 				<footer class="main">
 
-					&copy; 2015 <strong>Neon</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
+					&copy; 2017 <strong>NGC</strong> Web Team 
 
 				</footer>
 			</div>
@@ -265,6 +264,7 @@
 		<script src="{{ asset("assets/js/morris.min.js") }}"></script>
 		<script src="{{ asset("assets/js/toastr.js") }}"></script>
 		<script src="{{ asset("assets/js/neon-chat.js") }}"></script>
+		<!-- <script src="{{ asset("assets/js/neon-charts.js") }}""></script>  --><!-- buat isi data bar -->
 
 
 		<!-- JavaScripts initializations and stuff -->

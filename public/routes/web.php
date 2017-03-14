@@ -12,9 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+	return view('dashboard');
+});
+Route::get('/customerlist', function () {
+	return view('customerlist');
+});
+Route::get('/feedback', function () {
+	return view('feedback');
+});
+Route::get('/discount', function () {
+	return view('discount');
+});
+Route::get('/product', function () {
+	return view('product');
+});
+Route::get('/summary', function () {
+	return view('summary');
 });

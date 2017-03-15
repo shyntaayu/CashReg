@@ -1,19 +1,19 @@
-@extends('layout.header')
+@extends('layout.datatable')
 @section('title')
-Discounts
+Summary
 @stop
 @section('breadcrumb')
 <li>
-	<a href="library">Library</a>
+	<a href="customerlist">Customers</a>
 </li>
 <li class="active">
-	<strong>Discounts</strong>
+	<strong>Feedback</strong>
 </li>
 @stop
 @section('content')
 <div class="row">
-	<div class="col-md-3">
-		<div class="form-group">
+	<div class="col-md-8">
+		<div class="form-group pull-left">
 			<select class="form-control">
 				<option>Outlet 1</option>
 				<option>Outlet 2</option>
@@ -23,96 +23,118 @@ Discounts
 			</select>
 		</div>
 	</div>
-	<div class="col-md-9">
-		<a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="col-md-3 btn btn-primary pull-right">Create Discount</a>
+	<div class="col-md-4">
+		<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+			<span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+		</div>
 	</div>
 </div>
 <br>
-<script type="text/javascript">
-	jQuery( document ).ready( function( $ ) {
-		var $table4 = jQuery( "#table-4" );
-
-		$table4.DataTable( {
-			dom: 'Bfrtip',
-			buttons: [
-			'copyHtml5',
-			'excelHtml5',
-			'csvHtml5',
-			'pdfHtml5'
-			]
-		} );
-	} );
-</script>
-<table class="table table-bordered datatable" id="table-4">
-	<thead>
-		<tr>
-			<th>Discount Name</th>
-			<th>Amount</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Big</td>
-			<td>50%</td>
-		</tr>
-		<tr>
-			<td>Jumbo</td>
-			<td>60%</td>
-		</tr>
-		<tr>
-			<td>Little</td>
-			<td>20%</td>
-		</tr>
-	</tbody>
-</table>
-@stop
-@section('modal')
-<!-- Modal 6 (Long Modal)-->
-<div class="modal fade" id="modal-6">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Discount Information</h4>
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="x_panel">
+			<div class="x_title">
+				<h2>Summary</h2>
+				<ul class="nav navbar-right panel_toolbox">
+					<li><a href="#"><i class="fa fa-chevron-up"></i></a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Settings 1</a>
+							</li>
+							<li><a href="#">Settings 2</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-close"></i></a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
 			</div>
+			<div class="x_content">
+				<table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Name - Variant</th>
+							<th>Category</th>
+							<th>Outlet</th>
+							<th>Beginning</th>
+							<th>Purchase Order</th>
+							<th>Sales</th>
+							<th>Transfer</th>
+							<th>Adjusment</th>
+							<th>Ending</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Tela-tela</td>
+							<td>Uncategorized</td>
+							<td>Outlet 1</td>
+							<td>50</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>50</td>
+						</tr>
 
-			<div class="modal-body">
+						<tr>
+							<td>Wortel Manis</td>
+							<td>Uncategorized</td>
+							<td>Outlet 1</td>
+							<td>50</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>50</td>
+						</tr>
 
-				<div class="row">
-					<div class="col-md-6">
+						<tr>
+							<td>Pindang sambal</td>
+							<td>Uncategorized</td>
+							<td>Outlet 1</td>
+							<td>50</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>50</td>
+						</tr>
+					</tbody>
+				</table>
 
-						<div class="form-group">
-							<input type="text" class="form-control" id="field-1" placeholder="Name">
-						</div>
-
-					</div>
-
-					<div class="col-md-3">
-
-						<div class="form-group">
-
-							<input type="number" class="form-control" id="field-2" placeholder="Amount">
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="form-group">
-							<div class="col-sm-5">
-								<div id="label-switch" class="make-switch" data-on-label="%" data-off-label="Rp">
-									<input type="checkbox" checked>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-				<button type="button" class="btn btn-info">Save To All Outlets</button>
-				<button type="button" class="btn btn-info">Save</button>
 			</div>
 		</div>
 	</div>
 </div>
+
+@stop
+@section('js')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#datatable-responsive').DataTable( {
+			dom: 'Bfrtip',
+			buttons: [{
+				extend: "copy",
+				className: "btn-sm"
+			}, {
+				extend: "csv",
+				className: "btn-sm"
+			}, {
+				extend: "excel",
+				className: "btn-sm"
+			}, {
+				extend: "pdf",
+				className: "btn-sm"
+			}, {
+				extend: "print",
+				className: "btn-sm"
+			}]
+		} );
+	} );
+</script>
 @stop

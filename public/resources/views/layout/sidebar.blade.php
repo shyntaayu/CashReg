@@ -44,7 +44,7 @@
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-desktop"></i> Reports <span class="fa fa-chevron-down"></span></a>
+					<li><a href="report"><i class="fa fa-desktop"></i> Reports <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="general_elements.html">General Elements</a>
 							</li>

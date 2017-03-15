@@ -33,3 +33,9 @@ Route::get('/product', function () {
 Route::get('/summary', function () {
 	return view('summary');
 });
+Route::get('/adjustment', function () {
+	return view('adjustment');
+});
+Route::get('/report', function () {
+	return view('report');
+});

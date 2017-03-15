@@ -1,4 +1,4 @@
-@extends('layout.header')
+@extends('layout.datatable')
 @section('title')
 Feedback
 @stop
@@ -11,61 +11,77 @@ Feedback
 </li>
 @stop
 @section('content')
-<h3>Feedback</h3>
-<br />
 <div class="row">
-	<div class="col-sm-5">
-
-		<div class="daterange daterange-inline" data-format="MMMM D, YYYY" data-start-date="October 21, 2015" data-end-date="November 4, 2015">
-			<i class="entypo-calendar"></i>
-			<span>October 21, 2015 - November 4, 2015</span>
+	<div class="col-md-12">
+		<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+			<span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
 		</div>
-
 	</div>
 </div>
 <br>
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="x_panel">
+			<div class="x_title">
+				<h2>Feedback</h2>
+				<ul class="nav navbar-right panel_toolbox">
+					<li><a href="#"><i class="fa fa-chevron-up"></i></a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Settings 1</a>
+							</li>
+							<li><a href="#">Settings 2</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-close"></i></a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="x_content">
+				<table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Name</th>
+							<th>Comment</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Arlind</td>
+							<td>Nushi</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td>Art</td>
+							<td>Ramadani</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>Filan</td>
+							<td>Fisteku</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+@stop
+@section('js')
 <script type="text/javascript">
-	jQuery( document ).ready( function( $ ) {
-		var $table4 = jQuery( "#table-4" );
-
-		$table4.DataTable( {
-			dom: 'Bfrtip',
-			buttons: [
-			'copyHtml5',
-			'excelHtml5',
-			'csvHtml5',
-			'pdfHtml5'
-			]
-		} );
-	} );
+	$(document).ready(function() {
+		$('#datatable-responsive').DataTable();
+	});
 </script>
-<table class="table table-bordered datatable" id="table-4">
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Name</th>
-			<th>Comment</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>Arlind</td>
-			<td>Nushi</td>
-		</tr>
-
-		<tr>
-			<td>2</td>
-			<td>Art</td>
-			<td>Ramadani</td>
-		</tr>
-
-		<tr>
-			<td>3</td>
-			<td>Filan</td>
-			<td>Fisteku</td>
-		</tr>
-	</tbody>
-</table>
-
 @stop

@@ -1,4 +1,4 @@
-@extends('layout.header')
+@extends('layout.datatable')
 @section('title')
 Discounts
 @stop
@@ -28,43 +28,59 @@ Discounts
 	</div>
 </div>
 <br>
-<script type="text/javascript">
-	jQuery( document ).ready( function( $ ) {
-		var $table4 = jQuery( "#table-4" );
 
-		$table4.DataTable( {
-			dom: 'Bfrtip',
-			buttons: [
-			'copyHtml5',
-			'excelHtml5',
-			'csvHtml5',
-			'pdfHtml5'
-			]
-		} );
-	} );
-</script>
-<table class="table table-bordered datatable" id="table-4">
-	<thead>
-		<tr>
-			<th>Discount Name</th>
-			<th>Amount</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Big</td>
-			<td>50%</td>
-		</tr>
-		<tr>
-			<td>Jumbo</td>
-			<td>60%</td>
-		</tr>
-		<tr>
-			<td>Little</td>
-			<td>20%</td>
-		</tr>
-	</tbody>
-</table>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="x_panel">
+			<div class="x_title">
+				<h2>Discount</h2>
+				<ul class="nav navbar-right panel_toolbox">
+					<li><a href="#"><i class="fa fa-chevron-up"></i></a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Settings 1</a>
+							</li>
+							<li><a href="#">Settings 2</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-close"></i></a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="x_content">
+				<table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Discount Name</th>
+							<th>Amount</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Big</td>
+							<td>50%</td>
+						</tr>
+						<tr>
+							<td>Jumbo</td>
+							<td>60%</td>
+						</tr>
+						<tr>
+							<td>Little</td>
+							<td>20%</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+
 @stop
 @section('modal')
 <!-- Modal 6 (Long Modal)-->
@@ -115,4 +131,11 @@ Discounts
 		</div>
 	</div>
 </div>
+@stop
+@section('js')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#datatable-responsive').DataTable();
+	});
+</script>
 @stop

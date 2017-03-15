@@ -30,31 +30,21 @@
 				<ul class="nav side-menu">
 					<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
-							<li><a href="index.html">Dashboard</a>
-							</li>
-							<li><a href="index2.html">Dashboard2</a>
-							</li>
-							<li><a href="index3.html">Dashboard3</a>
+							<li><a href="dashboard">Dashboard</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-edit"></i> Inventory <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
-							<li><a href="form.html">General Form</a>
+							<li><a href="summary">Summary</a>
 							</li>
-							<li><a href="form_advanced.html">Advanced Components</a>
+							<li><a href="adjustment">Adjustment</a>
 							</li>
-							<li><a href="form_validation.html">Form Validation</a>
-							</li>
-							<li><a href="form_wizards.html">Form Wizard</a>
-							</li>
-							<li><a href="form_upload.html">Form Upload</a>
-							</li>
-							<li><a href="form_buttons.html">Form Buttons</a>
+							<li><a href="itemMaster">Item Master</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-desktop"></i> Reports <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="general_elements.html">General Elements</a>
 							</li>
@@ -76,19 +66,19 @@
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-table"></i> Customers <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
-							<li><a href="tables.html">Tables</a>
+							<li><a href="customerlist">Customers List</a>
 							</li>
-							<li><a href="tables_dynamic.html">Table Dynamic</a>
+							<li><a href="feedback">Feedback</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-bar-chart-o"></i> Library <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
-							<li><a href="chartjs.html">Chart JS</a>
+							<li><a href="product">Product</a>
 							</li>
-							<li><a href="chartjs2.html">Chart JS2</a>
+							<li><a href="discount">Discount</a>
 							</li>
 							<li><a href="morisjs.html">Moris JS</a>
 							</li>

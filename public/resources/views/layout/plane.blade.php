@@ -10,6 +10,13 @@
 
   <title>@yield('title') | CashRegister </title>
 
+  @yield('customcss')
+  <link href="{{ asset("assets/js/datatables/jquery.dataTables.min.css")}}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset("assets/js/datatables/buttons.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset("assets/js/datatables/fixedHeader.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset("assets/js/datatables/responsive.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset("assets/js/datatables/scroller.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+
   <!-- Bootstrap core CSS -->
 
   <link href="{{ asset("assets/css/bootstrap.min.css")}}" rel="stylesheet">
@@ -63,6 +70,8 @@
   <script src="{{ asset("assets/js/pace/pace.min.js") }}"></script>
   <!-- skycons -->
   <script src="{{asset("assets/js/skycons/skycons.min.js")}}"></script>
+
+  @yield('javascript')
 
   <!--[if lt IE 9]>
         <script src="../assets/js/ie8-responsive-file-warning.js"></script>
@@ -233,39 +242,6 @@
       enabled: false
     };
 
-    var data = {
-      labels: [
-      "Symbian",
-      "Blackberry",
-      "Other",
-      "Android",
-      "IOS"
-      ],
-      datasets: [{
-        data: [15, 20, 30, 10, 30],
-        backgroundColor: [
-        "#BDC3C7",
-        "#9B59B6",
-        "#455C73",
-        "#26B99A",
-        "#3498DB"
-        ],
-        hoverBackgroundColor: [
-        "#CFD4D8",
-        "#B370CF",
-        "#34495E",
-        "#36CAAB",
-        "#49A9EA"
-        ]
-
-      }]
-    };
-
-    var canvasDoughnut = new Chart(document.getElementById("canvas1"), {
-      type: 'doughnut',
-      tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-      data: data
-    });
   </script>
   <!-- /dashbord linegraph -->
   <!-- datepicker -->
@@ -349,6 +325,9 @@
   <!-- gauge js -->
   <script type="text/javascript" src="{{ asset("assets/js/gauge/gauge.min.js")}}"></script>
   <script type="text/javascript" src="{{ asset("assets/js/gauge/gauge_demo.js")}}"></script>
+  @yield('customjs')
+  @yield('js')
+  @yield('modal')
 </body>
 
 </html>

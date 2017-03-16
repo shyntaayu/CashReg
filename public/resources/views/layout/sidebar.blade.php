@@ -4,7 +4,7 @@
 	<div class="left_col scroll-view">
 
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Cash Register</span></a>
+			<a href="index.html" class="site_title"><i class="fa fa-desktop"></i> <span>Cash Register</span></a>
 		</div>
 		<div class="clearfix"></div>
 

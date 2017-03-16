@@ -11,11 +11,7 @@
   <title>@yield('title') | CashRegister </title>
 
   @yield('customcss')
-  <link href="{{ asset("assets/js/datatables/jquery.dataTables.min.css")}}" rel="stylesheet" type="text/css" />
-  <link href="{{ asset("assets/js/datatables/buttons.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
-  <link href="{{ asset("assets/js/datatables/fixedHeader.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
-  <link href="{{ asset("assets/js/datatables/responsive.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
-  <link href="{{ asset("assets/js/datatables/scroller.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+  @yield('css')
 
   <!-- Bootstrap core CSS -->
 

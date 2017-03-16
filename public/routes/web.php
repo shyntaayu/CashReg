@@ -39,3 +39,6 @@ Route::get('/adjustment', function () {
 Route::get('/report', function () {
 	return view('report');
 });
+Route::get('/addproduct', function () {
+	return view('addproduct');
+});

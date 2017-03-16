@@ -46,7 +46,7 @@
 					</li>
 					<li><a href="report"><i class="fa fa-file-text"></i> Reports </a>
 					</li>
-					<li><a><i class="fa fa-users"></i> Customers <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-users"></i> Customers <span class="fa fa-caret-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="customerlist">Customers List</a>
 							</li>

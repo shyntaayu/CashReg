@@ -4,7 +4,7 @@
 	<div class="left_col scroll-view">
 
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Cash Register</span></a>
+			<a href="index.html" class="site_title"><i class="fa fa-paper-plane"></i> <span>Cash Register</span></a>
 		</div>
 		<div class="clearfix"></div>
 
@@ -28,13 +28,13 @@
 			<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-home"></i> Home <span class="fa fa-caret-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="dashboard">Dashboard</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-cubes"></i> Inventory <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-cubes"></i> Inventory <span class="fa fa-caret-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="summary">Summary</a>
 							</li>
@@ -54,7 +54,7 @@
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-list"></i> Library <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-list"></i> Library <span class="fa fa-caret-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="product">Product</a>
 							</li>

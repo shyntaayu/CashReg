@@ -155,7 +155,7 @@ body.nav-sm span.fa, body.nav-sm .menu_section h3 {
 .nav_menu {
   float: left;
   /*background: #F4F6F9;
-    border-bottom: 1px solid #E6E9ED;*/
+  border-bottom: 1px solid #E6E9ED;*/
   background: #EDEDED;
   border-bottom: 1px solid #D9DEE4;
   margin-bottom: 10px;
@@ -936,7 +936,7 @@ table.tile h3, table.tile h4, table.tile span {
 table.tile th, table.tile td {
   text-align: center;
 }
-table.tile th {
+table.tile th, table.tile_info td.line {
   border-bottom: 1px solid #E6ECEE;
 }
 table.tile td {
@@ -958,7 +958,50 @@ table.tile td ul li a big {
   float: right;
   margin-right: 13px;
 }
-table.tile_info {
+/*custom tile*/
+table.tile_custom h3, table.tile_custom h4, table.tile_custom span {
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+table.tile_custom th, table.tile_custom td {
+  text-align: center;
+}
+table.tile_custom th, table.tile_custom tr.line {
+  border-top: 2px solid #E6ECEE;
+  font-weight: bold;
+}
+table.tile_custom td {
+  padding: 5px 0;
+  text-align: left;
+  font-size: 14px;
+}
+table.tile_custom tr.total {
+  font-weight: bold;
+  border-top: 2px  solid #E6ECEE;
+  border-bottom: 2px  solid #E6ECEE;
+}
+table.tile_custom tr.tabhead {
+  background-color: #fff;
+  color: #fff;
+}
+table.tile_custom td ul {
+  text-align: left;
+  padding-left: 0
+}
+table.tile_custom td ul li {
+  list-style: none;
+  width: 100%;
+}
+table.tile_custom td ul li a {
+  width: 100%
+}
+table.tile_custom td ul li a big {
+  right: 0;
+  float: right;
+  margin-right: 13px;
+}
+
+table.tile_info, table.tile_custom {
   width: 100%;
 }
 table.tile_info td {
@@ -1119,8 +1162,8 @@ table.jambo_table tbody tr.selected td {
 }
 table.dataTable th.focus,
 table.dataTable td.focus {
-    outline: 2px solid #1ABB9C !important;
-    outline-offset: -1px;
+  outline: 2px solid #1ABB9C !important;
+  outline-offset: -1px;
 }
 
 /* Pagination nested */
@@ -3958,7 +4001,7 @@ ul.project_files li a i {
  * License: MIT
  */
 
-.tabs-left, .tabs-right {
+ .tabs-left, .tabs-right {
   border-bottom: none;
   padding-top: 2px;
 }
@@ -4059,7 +4102,7 @@ ul.project_files li a i {
  * Date: 2015-02-19T06:49:29.144Z
  */
 
-.cropper-container {
+ .cropper-container {
   position: relative;
   overflow: hidden;
   -webkit-user-select: none;
@@ -5052,11 +5095,11 @@ header {
 
 
 /* Main
- * ========================================================================== */
+* ========================================================================== */
 
 
 /* Icons
- * -------------------------------------------------------------------------- */
+* -------------------------------------------------------------------------- */
 
 .icon {
   display: inline-block;
@@ -5106,7 +5149,7 @@ header {
 }
 
 /* Alerts
- * -------------------------------------------------------------------------- */
+* -------------------------------------------------------------------------- */
 
 .docs-alert {
   display: none;
@@ -5142,11 +5185,11 @@ header {
 }
 
 /* Button
- * -------------------------------------------------------------------------- */
+* -------------------------------------------------------------------------- */
 
 
 /* Basic style
- * -------------------------------------------------------------------------- */
+* -------------------------------------------------------------------------- */
 
 body {
   overflow-x: hidden;

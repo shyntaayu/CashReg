@@ -11,6 +11,10 @@
   <title>@yield('title') | CashRegister </title>
 
   @yield('customcss')
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
   <link href="{{ asset("assets/js/datatables/jquery.dataTables.min.css")}}" rel="stylesheet" type="text/css" />
   <link href="{{ asset("assets/js/datatables/buttons.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
   <link href="{{ asset("assets/js/datatables/fixedHeader.bootstrap.min.css")}}" rel="stylesheet" type="text/css" />

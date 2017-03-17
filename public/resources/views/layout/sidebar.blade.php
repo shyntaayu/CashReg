@@ -28,62 +28,62 @@
 			<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a><i class="fa fa-home"></i> Home <span class="fa fa-caret-down"></span></a>
+					<li><a><i class="lnr lnr-home"></i> Home <span class="lnr lnr-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="dashboard">Dashboard</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="fa fa-cubes"></i> Inventory <span class="fa fa-caret-down"></span></a>
+					<li><a><i class="lnr lnr-inbox"></i> Inventory <span class="lnr lnr-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="summary">Summary</a>
 							</li>
 							<li><a href="adjustment">Adjustment</a>
 							</li>
 							<!-- <li><a href="itemMaster">Item Master</a>
-						</li> -->
-					</ul>
-				</li>
-				<li><a href="report"><i class="fa fa-file-text"></i> Reports </a>
-				</li>
-				<li><a><i class="fa fa-users"></i> Customers <span class="fa fa-caret-down"></span></a>
-					<ul class="nav child_menu" style="display: none">
-						<li><a href="customerlist">Customers List</a>
-						</li>
-						<li><a href="feedback">Feedback</a>
-						</li>
-					</ul>
-				</li>
-				<li><a><i class="fa fa-list"></i> Library <span class="fa fa-caret-down"></span></a>
-					<ul class="nav child_menu" style="display: none">
-						<li><a href="product">Product</a>
-						</li>
-						<li><a href="discount">Discount</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+							</li> -->
+						</ul>
+					</li>
+					<li><a href="report"><i class="lnr lnr-book"></i> Reports </a>
+					</li>
+					<li><a><i class="lnr lnr-users"></i> Customers <span class="lnr lnr-chevron-down"></span></a>
+						<ul class="nav child_menu" style="display: none">
+							<li><a href="customerlist">Customers List</a>
+							</li>
+							<li><a href="feedback">Feedback</a>
+							</li>
+						</ul>
+					</li>
+					<li><a><i class="lnr lnr-list"></i> Library <span class="lnr lnr-chevron-down"></span></a>
+						<ul class="nav child_menu" style="display: none">
+							<li><a href="product">Product</a>
+							</li>
+							<li><a href="discount">Discount</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
 		</div>
+		<!-- /sidebar menu -->
 
+		<!-- /menu footer buttons -->
+		<div class="sidebar-footer hidden-small">
+			<a data-toggle="tooltip" data-placement="top" title="Settings">
+				<span class="lnr lnr-cog" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+				<span class="lnr lnr-frame-expand" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="Lock">
+				<span class="lnr lnr-eye" aria-hidden="true"></span>
+			</a>
+			<a data-toggle="tooltip" data-placement="top" title="Logout">
+				<span class="lnr lnr-power-switch" aria-hidden="true"></span>
+			</a>
+		</div>
+		<!-- /menu footer buttons -->
 	</div>
-	<!-- /sidebar menu -->
-
-	<!-- /menu footer buttons -->
-	<div class="sidebar-footer hidden-small">
-		<a data-toggle="tooltip" data-placement="top" title="Settings">
-			<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-		</a>
-		<a data-toggle="tooltip" data-placement="top" title="FullScreen">
-			<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-		</a>
-		<a data-toggle="tooltip" data-placement="top" title="Lock">
-			<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-		</a>
-		<a data-toggle="tooltip" data-placement="top" title="Logout">
-			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-		</a>
-	</div>
-	<!-- /menu footer buttons -->
-</div>
 </div>
 @stop

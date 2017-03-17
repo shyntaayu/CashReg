@@ -536,19 +536,30 @@ Products
 										<div class="x_title">
 											Variant
 										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="Price">
+											<span class="fa fa-money form-control-feedback left" aria-hidden="true"></span>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="SKU">
+											<span class="fa fa-barcode form-control-feedback left" aria-hidden="true"></span>
+										</div>
+										<div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+											<input type="submit" class="form-control btn btn-primary" id="inputSuccess5" value="Add Variant">
+										</div>
 										<div class="x_title">
 											Inventory
 										</div>
 										<div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-											<input type="submit" class="form-control btn btn-primary" id="inputSuccess5" placeholder="Phone">
+											<input type="submit" class="form-control btn btn-primary" id="inputSuccess5" value="Start Tracking Item Inventory and Alerts">
 										</div>
 										<div class="x_title">
 											Modifier
 										</div>
 										<div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-											<div class="checkbox">
+											<div class="radio">
 												<label>
-													<input type="checkbox" class="flat"> Modifier Name
+													<input type="radio" class="flat"> Modifier Name
 												</label>
 											</div>
 										</div>
@@ -558,39 +569,11 @@ Products
 										<div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
 											<textarea type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Item Description"></textarea>
 										</div>
-
-										
-
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12">Default Input</label>
-											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input type="text" class="form-control" placeholder="Default Input">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12">Disabled Input </label>
-											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input type="text" class="form-control" disabled="disabled" placeholder="Disabled Input">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12">Read-Only Input</label>
-											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input type="text" class="form-control" readonly="readonly" placeholder="Read-Only Input">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
-											</label>
-											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
-											</div>
-										</div>
 										<div class="ln_solid"></div>
 										<div class="form-group">
 											<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
 												<button type="submit" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-												<button type="submit" class="btn btn-success">Submit</button>
+												<button type="submit" class="btn btn-success">Save</button>
 											</div>
 										</div>
 

@@ -96,7 +96,7 @@ Discounts
 			<div class="modal-body">
 				
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
 
 						<div class="form-group">
 							<input type="text" class="form-control" id="field-1" placeholder="Name">
@@ -104,19 +104,22 @@ Discounts
 
 					</div>
 
-					<div class="col-md-3">
+					<div class="col-md-4">
 
 						<div class="form-group">
 
 							<input type="number" class="form-control" id="field-2" placeholder="Amount">
 						</div>	
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-4">
 						<div class="form-group">
-							<div class="col-sm-5">
-								<div id="label-switch" class="make-switch" data-on-label="%" data-off-label="Rp">
-									<input type="checkbox" checked>
-								</div>
+							<div class="radio">
+								<label>
+									<input type="radio" class="flat"> Rp
+								</label>
+								<label>
+									<input type="radio" class="flat"> %
+								</label>
 							</div>
 						</div>
 					</div>
@@ -133,6 +136,7 @@ Discounts
 </div>
 @stop
 @section('js')
+<script src="{{asset("assets/js/icheck/icheck.min.js")}}"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#datatable-responsive').DataTable();

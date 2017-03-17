@@ -28,13 +28,13 @@
 			<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a><i class="lnr lnr-home"></i> Home <span class="lnr lnr-chevron-down"></span></a>
+					<li><a><i class="pe pe-7s-home"></i> Home <span class="pe pe-7s-angle-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="dashboard">Dashboard</a>
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="lnr lnr-inbox"></i> Inventory <span class="lnr lnr-chevron-down"></span></a>
+					<li><a><i class="pe pe-7s-box1"></i> Inventory <span class="pe pe-7s-angle-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="summary">Summary</a>
 							</li>
@@ -44,9 +44,9 @@
 							</li> -->
 						</ul>
 					</li>
-					<li><a href="report"><i class="lnr lnr-book"></i> Reports </a>
+					<li><a href="report"><i class="pe pe-7s-note2"></i> Reports </a>
 					</li>
-					<li><a><i class="lnr lnr-users"></i> Customers <span class="lnr lnr-chevron-down"></span></a>
+					<li><a><i class="pe pe-7s-users"></i> Customers <span class="pe pe-7s-angle-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="customerlist">Customers List</a>
 							</li>
@@ -54,7 +54,7 @@
 							</li>
 						</ul>
 					</li>
-					<li><a><i class="lnr lnr-list"></i> Library <span class="lnr lnr-chevron-down"></span></a>
+					<li><a><i class="pe pe-7s-notebook"></i> Library <span class="pe pe-7s-angle-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="product">Product</a>
 							</li>
@@ -71,16 +71,16 @@
 		<!-- /menu footer buttons -->
 		<div class="sidebar-footer hidden-small">
 			<a data-toggle="tooltip" data-placement="top" title="Settings">
-				<span class="lnr lnr-cog" aria-hidden="true"></span>
+				<span class="pe pe-7s-config" aria-hidden="true"></span>
 			</a>
 			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
-				<span class="lnr lnr-frame-expand" aria-hidden="true"></span>
+				<span class="pe pe-7s-expand1" aria-hidden="true"></span>
 			</a>
 			<a data-toggle="tooltip" data-placement="top" title="Lock">
-				<span class="lnr lnr-eye" aria-hidden="true"></span>
+				<span class="pe pe-7s-lock" aria-hidden="true"></span>
 			</a>
 			<a data-toggle="tooltip" data-placement="top" title="Logout">
-				<span class="lnr lnr-power-switch" aria-hidden="true"></span>
+				<span class="pe pe-7s-power" aria-hidden="true"></span>
 			</a>
 		</div>
 		<!-- /menu footer buttons -->

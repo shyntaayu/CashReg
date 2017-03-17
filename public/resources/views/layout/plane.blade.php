@@ -14,7 +14,8 @@
   @yield('css')
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="{{ asset("assets/fonts/pe-icon7/css/pe-icon-7-stroke.css")}}">
+  <link rel="stylesheet" href="{{ asset("assets/fonts/pe-icon7/css/helper.css")}}">
 
 
   <!-- Bootstrap core CSS -->

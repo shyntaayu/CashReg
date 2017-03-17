@@ -142,11 +142,10 @@ body.nav-sm .profile {
   min-width: inherit;
   color: #C4CFDA;
 }
-#sidebar-menu span.lnr {
+#sidebar-menu span.pe {
     float: right;
     text-align: center;
     margin-top: 5px;
-    font-size: 8px !important;
     min-width: inherit;
     color: #FFFFFF;
     opacity: .99;
@@ -158,7 +157,7 @@ body.nav-sm .profile {
 body.nav-sm .menu_section {
   margin: 0;
 }
-body.nav-sm span.fa, body.nav-sm span.lnr, body.nav-sm .menu_section h3 {
+body.nav-sm span.fa, body.nav-sm span.pe, body.nav-sm .menu_section h3 {
   display: none !important;
 }
 .nav_menu {
@@ -1709,7 +1708,7 @@ h4.graph_title {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sidebar-menu .lnr {
+#sidebar-menu .pe {
   width: 26px;
   opacity: .99;
   display: inline-block;

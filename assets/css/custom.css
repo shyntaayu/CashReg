@@ -550,7 +550,7 @@ body.nav-md ul.nav.child_menu li:after {
   border-right: 5px solid #1ABB9C;
 }*/
 li.current-page {
-  background: rgba(0,0,0,.2);
+  background: rgba(0,0,0,.3) !important;
 }
 .nav.side-menu> li.active > a {
   color: #ff0000;

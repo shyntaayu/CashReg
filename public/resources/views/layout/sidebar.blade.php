@@ -4,11 +4,7 @@
 	<div class="left_col scroll-view">
 
 		<div class="navbar nav_title" style="border: 0;">
-<<<<<<< HEAD
-			<a href="index.html" class="site_title"><i class="fa fa-desktop"></i> <span>Cash Register</span></a>
-=======
 			<a href="index.html" class="site_title"><i class="fa fa-paper-plane"></i> <span>Cash Register</span></a>
->>>>>>> 4a8f3d3f59732b327f1c04aaa2018c7335b75e08
 		</div>
 		<div class="clearfix"></div>
 

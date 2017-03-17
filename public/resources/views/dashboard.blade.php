@@ -124,7 +124,7 @@ Dashboard
 <br>
 <div class="page-title">
 	<div class="title_left">
-		<h3>Sales Summary </h3>
+		<h3>Item Summary </h3>
 	</div>
 </div>
 <div class="row">

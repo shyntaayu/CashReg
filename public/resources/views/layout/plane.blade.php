@@ -47,8 +47,6 @@
   <!-- chart js -->
   <script src="{{ asset("assets/js/chartjs/chart.min.js")}}"></script>
 
-  <script src="{{ asset("assets/js/custom.js")}}"></script>
-
   <!-- flot js -->
   <!--[if lte IE 8]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
   <script type="text/javascript" src="{{ asset("assets/js/flot/jquery.flot.js")}}"></script>
@@ -325,6 +323,7 @@
   <!-- gauge js -->
   <script type="text/javascript" src="{{ asset("assets/js/gauge/gauge.min.js")}}"></script>
   <script type="text/javascript" src="{{ asset("assets/js/gauge/gauge_demo.js")}}"></script>
+  <script src="{{ asset("assets/js/custom.js")}}"></script>
   @yield('customjs')
   @yield('js')
   @yield('modal')

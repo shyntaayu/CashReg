@@ -4,7 +4,7 @@
 	<div class="left_col scroll-view">
 
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="index.html" class="site_title"><i class="fa fa-paper-plane"></i> <span>Cash Register</span></a>
+			<a href="dashboard" class="site_title"><i class="fa fa-paper-plane"></i> <span>Cash Register</span></a>
 		</div>
 		<div class="clearfix"></div>
 
@@ -40,50 +40,50 @@
 							</li>
 							<li><a href="adjustment">Adjustment</a>
 							</li>
-							<li><a href="itemMaster">Item Master</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="report"><i class="fa fa-file-text"></i> Reports </a>
-					</li>
-					<li><a><i class="fa fa-users"></i> Customers <span class="fa fa-caret-down"></span></a>
-						<ul class="nav child_menu" style="display: none">
-							<li><a href="customerlist">Customers List</a>
-							</li>
-							<li><a href="feedback">Feedback</a>
-							</li>
-						</ul>
-					</li>
-					<li><a><i class="fa fa-list"></i> Library <span class="fa fa-caret-down"></span></a>
-						<ul class="nav child_menu" style="display: none">
-							<li><a href="product">Product</a>
-							</li>
-							<li><a href="discount">Discount</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-
+							<!-- <li><a href="itemMaster">Item Master</a>
+						</li> -->
+					</ul>
+				</li>
+				<li><a href="report"><i class="fa fa-file-text"></i> Reports </a>
+				</li>
+				<li><a><i class="fa fa-users"></i> Customers <span class="fa fa-caret-down"></span></a>
+					<ul class="nav child_menu" style="display: none">
+						<li><a href="customerlist">Customers List</a>
+						</li>
+						<li><a href="feedback">Feedback</a>
+						</li>
+					</ul>
+				</li>
+				<li><a><i class="fa fa-list"></i> Library <span class="fa fa-caret-down"></span></a>
+					<ul class="nav child_menu" style="display: none">
+						<li><a href="product">Product</a>
+						</li>
+						<li><a href="discount">Discount</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
-		<!-- /sidebar menu -->
 
-		<!-- /menu footer buttons -->
-		<div class="sidebar-footer hidden-small">
-			<a data-toggle="tooltip" data-placement="top" title="Settings">
-				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
-				<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="Lock">
-				<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="Logout">
-				<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-			</a>
-		</div>
-		<!-- /menu footer buttons -->
 	</div>
+	<!-- /sidebar menu -->
+
+	<!-- /menu footer buttons -->
+	<div class="sidebar-footer hidden-small">
+		<a data-toggle="tooltip" data-placement="top" title="Settings">
+			<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+		</a>
+		<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+			<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+		</a>
+		<a data-toggle="tooltip" data-placement="top" title="Lock">
+			<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+		</a>
+		<a data-toggle="tooltip" data-placement="top" title="Logout">
+			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+		</a>
+	</div>
+	<!-- /menu footer buttons -->
+</div>
 </div>
 @stop

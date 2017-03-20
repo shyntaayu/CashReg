@@ -73,12 +73,6 @@
 			<a data-toggle="tooltip" data-placement="top" title="Settings">
 				<span class="pe pe-7s-config" aria-hidden="true"></span>
 			</a>
-			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
-				<span class="pe pe-7s-expand1" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="Lock">
-				<span class="pe pe-7s-lock" aria-hidden="true"></span>
-			</a>
 			<a data-toggle="tooltip" data-placement="top" title="Logout">
 				<span class="pe pe-7s-power" aria-hidden="true"></span>
 			</a>

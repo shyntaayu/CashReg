@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>@yield('title') | CashRegister </title>
+  <link rel="icon" href="{{ asset("assets/images/icon.png")}}">
 
   @yield('customcss')
   @yield('css')
@@ -36,7 +37,7 @@
 
   <script src="{{ asset("assets/js/bootstrap.min.js")}}"></script>
 
-  
+
   <!-- bootstrap progress js -->
   <script src="{{ asset("assets/js/progressbar/bootstrap-progressbar.min.js")}}"></script>
   <script src="{{ asset("assets/js/nicescroll/jquery.nicescroll.min.js")}}"></script>

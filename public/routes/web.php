@@ -42,3 +42,6 @@ Route::get('/report', function () {
 Route::get('/addproduct', function () {
 	return view('addproduct');
 });
+Route::get('/login', function () {
+	return view('login');
+});

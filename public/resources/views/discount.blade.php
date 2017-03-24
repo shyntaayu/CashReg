@@ -92,45 +92,46 @@ Discounts
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				<h4 class="modal-title">Discount Information</h4>
 			</div>
+			<form id="my-form">
+				<div class="modal-body">
 
-			<div class="modal-body">
-				
-				<div class="row">
-					<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-4">
 
-						<div class="form-group">
-							<input type="text" class="form-control" id="field-1" placeholder="Name">
-						</div>	
+							<div class="form-group">
+								<input type="text" class="form-control" id="field-1" placeholder="Name">
+							</div>	
 
-					</div>
+						</div>
 
-					<div class="col-md-4">
+						<div class="col-md-4">
 
-						<div class="form-group">
+							<div class="form-group">
 
-							<input type="number" class="form-control" id="field-2" placeholder="Amount">
-						</div>	
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<div class="radio">
-								<label>
-									<input type="radio" class="flat"> Rp
-								</label>
-								<label>
-									<input type="radio" class="flat"> %
-								</label>
+								<input type="number" class="form-control" id="field-2" placeholder="Amount">
+							</div>	
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<div class="radio">
+									<label>
+										<input type="radio" name="tipe" class="flat"> Rp
+									</label>
+									<label>
+										<input type="radio" name="tipe" class="flat"> %
+									</label>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-				<button type="button" class="btn btn-info">Save To All Outlets</button>
-				<button type="button" class="btn btn-info">Save</button>
-			</div>
+				<div class="modal-footer">
+					<button type="reset" id="clear-form" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-info">Save To All Outlets</button>
+					<button type="button" class="btn btn-info">Save</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -140,6 +141,11 @@ Discounts
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#datatable-responsive').DataTable();
+		$('#clear-form').on('click', function()
+		{
+			$('#my-form').find('input:text, input:password, select, textarea, input[type=number]').val('');
+			$('#my-form').find('input:radio, input:checkbox').prop('checked', false);
+		});
 	});
 </script>
 @stop
